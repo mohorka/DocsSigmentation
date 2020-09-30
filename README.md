@@ -1,1 +1,1 @@
-# Image-Filters-Pack
+# Image Filters Pack
