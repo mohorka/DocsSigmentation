@@ -10,5 +10,6 @@ Python 3.x
 3. `pip install -r requirements.txt` - установка зависимостей
 
 Таким образом, запуск одной командой: `python3 -m venv env/. && source env/bin/activate && pip install -r requirements.txt`
-(Для Windows: `py -m venv env/. && source env/bin/activate && pip install -r requirements.txt`)
+(Для Windows: `py -m venv env/. && source env/bin/activate && pip install -r requirements.txt`).
+
 Для сохранения новых зависимостей в процессе работы : `pip freeze -l > requirements.txt`
