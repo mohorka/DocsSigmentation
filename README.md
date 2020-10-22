@@ -2,7 +2,7 @@
 Библиотека для обработки изображений на Python
 
 ### Версия
--Python 3.x
+Python 3.x
 
 ### Установка
 1. `python3 -m venv env/.` - создание окружения (для windows:  py -m venv env/.)
