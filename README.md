@@ -5,7 +5,7 @@
 Python 3.x
 
 ### Установка
-1. `python3 -m venv env/.` - создание окружения (для windows:  py -m venv env/.)
+1. `python3 -m venv env/.` - создание окружения (для windows:  `py -m venv env/.`)
 2. `source env/bin/activate` - активация окружения (если падает с ошибкой, то меняем политику выполнения: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process` ,после снова шаг 2)
 3. `pip install -r requirements.txt` - установка зависимостей
 
