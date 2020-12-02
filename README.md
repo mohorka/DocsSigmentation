@@ -1,5 +1,5 @@
-# Image Filters Pack
-Библиотека для обработки изображений на Python
+# Documents' sigmentation
+Программа, определяющая области интереса на документе
 
 ### Версия
 Python 3.x
