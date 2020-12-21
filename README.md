@@ -13,3 +13,6 @@ Python 3.x
 (Для Windows: `py -m venv env/. && source env/bin/activate && pip install -r requirements.txt`).
 
 Для сохранения новых зависимостей в процессе работы : `pip freeze -l > requirements.txt`
+
+### Пример результата работы
+![Result](/result.jpg)
