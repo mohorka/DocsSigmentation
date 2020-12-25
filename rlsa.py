@@ -1,19 +1,18 @@
-from numpy import ndarray
+from numpy import ndarray, arange, nditer
 
 
 def iteration(image: ndarray, value: int) -> ndarray:
-    rows, cols = image.shape
-    for row in range(0, rows):
+    for row in nditer(arange(image.shape[0])):
         try:
             begin = image[row].tolist().index(0)
         except ValueError:
             begin = 0
+            count = begin
 
-        count = begin
-        for col in range(begin, cols):
-            if image[row, col] == 0:
-                if(col - count) <= value and (col-count) > 0:
-                    image[row, count:col] = 0
+    for col in nditer(arange(begin, image.shape[1])):
+        if image[row, col] == 0:
+            if value >= (col - count) > 0:
+                image[row, count:col] = 0
                 count = col
     return image
 

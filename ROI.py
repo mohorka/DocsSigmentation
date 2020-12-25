@@ -12,7 +12,7 @@ def get_ROI(image: np.ndarray):
     cv2.waitKey(0)
 
     threshold_inv, inv_smoothed_img = cv2.threshold(smoothed_img, 0, 255, cv2.THRESH_BINARY_INV)
-    dilation_kernel = np.ones((3, 3), dtype=int)
+    dilation_kernel = np.ones((5, 4), dtype=int)
     dilated_img = cv2.dilate(inv_smoothed_img, dilation_kernel, iterations=2)
 
     ret, labels = cv2.connectedComponents(dilated_img)
